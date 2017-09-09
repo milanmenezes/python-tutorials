@@ -7,5 +7,4 @@ def trib(a,b,c,n):
   
 n=eval(raw_input("Enter n \n"))
 print 0,1,1,
-
 trib(0,1,1,n-3)

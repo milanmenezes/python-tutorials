@@ -1,7 +1,7 @@
 def disp():
   a="+ - - - - + - - - - +"
   b="|         |         |"
+  print a+a+"\n",b+b+"\n",b+b+"\n",b+b+"\n",a+a+"\n"
   
-  print a+"\n",b+"\n",b+"\n",b+"\n",a+"\n"
-  
+disp()
 disp()
