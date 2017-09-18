@@ -12,8 +12,6 @@ for line in f:
         if k in words:
           if k in dict:
             dict[k]+=1
-#           else:
-#             dict[k]=1
         else:
           words.append(k)
           dict[k]=1
