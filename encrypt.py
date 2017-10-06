@@ -1,9 +1,12 @@
+result=[]
+
 def enc(a,n,val):
+  global result
   t=ord(a)
   t-=val
   t=(t+n)%26
   t+=val
-  print chr(t),
+  result.append(chr(t))
   
 
 x=raw_input("Enter the string\n")
@@ -16,3 +19,4 @@ for i in x:
     val=97
   enc(i,num,val)
   
+print "".join(result)
