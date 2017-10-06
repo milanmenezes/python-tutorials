@@ -8,15 +8,17 @@ def enc(a,n,val):
   t+=val
   result.append(chr(t))
   
-
 x=raw_input("Enter the string\n")
 num=eval(raw_input("Enter the number\n"))
 
 for i in x:
-  if x.isupper():
+  if i.isupper():
     val=65
-  else:
+    enc(i,num,val)
+  elif i.islower():
     val=97
-  enc(i,num,val)
+    enc(i,num,val)
+  else:
+    result.append(i)
   
 print "".join(result)
