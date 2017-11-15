@@ -10,7 +10,6 @@ for line in f:
       c=j.split()
       for k in c:
         if k in words:
-          if k in dict:
             dict[k]+=1
         else:
           words.append(k)

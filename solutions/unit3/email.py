@@ -4,8 +4,8 @@ f=open("mbox-short.txt")
 l=[]
 dict={}
 for line in f:
-  l.extend(re.findall(r'From: +[\w\.-]+@[\w\.-]+\.\w+', line))
-  l.extend(re.findall(r'From +[\w\.-]+@[\w\.-]+\.\w+', line))
+  l.extend(re.findall('From: [\w\.-]+@[\w\.-]+\.\w+', line))
+  l.extend(re.findall('From [\w\.-]+@[\w\.-]+\.\w+', line))
   
 for i in range(len(l)):
   l[i]=l[i].replace("From: ","")
